@@ -6,8 +6,13 @@ for($i=0;$i<$size;$i++){
     }
     
     for($k=0; $k< $i *2 +1; $k++ ){
+        if($i == 0 || $i == $size-1 || $k  == 0 || $k ==  $i *2  )
             echo "*";
+       
+        else {
+            echo "&nbsp;&nbsp;";
         }
+         }
         echo "</br>";
 }
         
